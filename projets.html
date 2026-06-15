@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Preston YASSA · BTS SIO SISR</title>
+<meta name="description" content="Projets personnalisés encadrés et ateliers professionnels : AD, GLPI, cybersécurité, Cisco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="led"></span>Preston.sisr</a>
+    <button class="nav-toggle" aria-label="Menu">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">Profil</a></li>
+      <li><a href="bts-sio.html">BTS SIO</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="patrimoine.html">Patrimoine SI</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="synoptique.html">Synoptique E5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="page-intro"><div class="wrap">
+  <p class="eyebrow">// PPE &amp; ateliers professionnels</p>
+  <h1>Projets</h1>
+  <p>Mes réalisations encadrées, avec le contexte, les technologies utilisées, des captures d'écran et les liens vers mes dépôts GitHub.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="grid cols-2">
+
+    <div class="card reveal">
+      <span class="num" style="font-family:var(--mono);color:var(--signal);font-size:.8rem">A1</span>
+      <h3>Projet Active Directory</h3>
+      <p></p>
+      <div class="shot"></div>
+      <div class="tag-row"><span class="tag"></span><span class="tag"></span><span class="tag"></span><span class="tag"></span><span class="tag"></span></div>
+      <div style="margin-top:14px"><a class="btn ghost" href="#"></a></div>
+      <span class="placeholder"></span>
+    </div>
+    <div class="card reveal">
+      <span class="num" style="font-family:var(--mono);color:var(--signal);font-size:.8rem">A2</span>
+      <h3>Projet GLPI</h3>
+      <p>Déploiement d'une solution de gestion de parc et de tickets : inventaire automatisé, helpdesk, base de connaissances.</p>
+      <div class="tag-row"><span class="tag">GLPI</span><span class="tag">FusionInventory</span><span class="tag">MySQL</span><span class="tag">ITSM</span></div>
+      <div style="margin-top:14px"><a class="btn ghost" href="#">Dépôt GitHub →</a></div>
+      <span class="placeholder">À compléter : contexte, étapes, captures, lien GitHub</span>
+    </div>
+    <div class="card reveal">
+      <span class="num" style="font-family:var(--mono);color:var(--signal);font-size:.8rem">A4</span>
+      <h3>Projet Cisco</h3>
+      <p>Conception d'un réseau commuté/routé : LAN, Routage, IP route.</p>
+      <img src="assets/Projet cisco.png" alt="Schéma du projet Cisco" style="width:100%;border-radius:4px;margin-top:16px">
+      <div class="tag-row"><span class="tag">Cisco</span><span class="tag">Packet Tracer</span><span class="tag">LAN</span><span class="tag">Routage</span></div>
+      <div style="margin-top:14px"><a class="btn ghost" href="#"></a></div>
+      <span class="placeholder"></span>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="site-footer wrap">
+  <span>&copy; <span id="year"></span> Preston YASSA &middot; BTS SIO SISR</span>
+  <span>Portfolio E4</span>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

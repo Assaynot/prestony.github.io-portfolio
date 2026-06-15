@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Preston YASSA · BTS SIO SISR</title>
+<meta name="description" content="Formulaire de contact pour recruteurs et entreprises.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="led"></span>Preston.sisr</a>
+    <button class="nav-toggle" aria-label="Menu">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">Profil</a></li>
+      <li><a href="bts-sio.html">BTS SIO</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="patrimoine.html">Patrimoine SI</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="synoptique.html">Synoptique E5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="page-intro"><div class="wrap">
+  <p class="eyebrow">// restons en contact</p>
+  <h1>Contact</h1>
+  <p>Recruteurs, entreprises : ce formulaire permet de me joindre pour un stage, une alternance ou un premier emploi.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="grid cols-2">
+    <form class="form reveal" id="contact-form">
+      <div class="field"><label for="nom">Nom</label><input id="nom" type="text" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" type="email" required></div>
+      <div class="field"><label for="msg">Message</label><textarea id="msg" rows="5" required></textarea></div>
+      <button class="btn solid" type="submit">Envoyer le message</button>
+      <p id="form-note" style="font-family:var(--mono);font-size:.8rem"></p>
+    </form>
+    <div class="reveal">
+      <ul class="contact-side">
+        <li><span>Email</span> &nbsp; presyassa@gmail.com</li>
+        <li><span>LinkedIn</span> &nbsp; [<a https://www.linkedin.com/in/preston-yassa-4372b8311/></li>
+        <li><span>GitHub</span> &nbsp; <a https://github.com/Assaynot></li>
+        <li><span>Localisation</span> &nbsp; Ile-de-France</li>
+        <li><span>CV</span> &nbsp; <a href="cv.pdf" download>Télécharger (cv.pdf)</a></li>
+      </ul>
+      <span class="placeholder" style="margin-top:16px">Pour un envoi réel sans back-end : Formspree ou EmailJS</span>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="site-footer wrap">
+  <span>&copy; <span id="year"></span> Preston YASSA &middot; BTS SIO SISR</span>
+  <span>Portfolio E4 </span>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

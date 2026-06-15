@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille technologique — Preston YASSA</title>
+<meta name="description" content="Veille technologique et juridique : 5G/IA, cryptographie, cybersécurité, RGPD/CNIL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="led"></span>Preston.sisr</a>
+    <button class="nav-toggle" aria-label="Menu">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">Profil</a></li>
+      <li><a href="bts-sio.html">BTS SIO</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="patrimoine.html">Patrimoine SI</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="synoptique.html">Synoptique E5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="page-intro"><div class="wrap">
+  <p class="eyebrow">// veille technologique</p>
+  <h1>Le développement des firewalls</h1>
+  <p>Mon sujet de veille porte sur l'évolution des pare-feu : du filtrage de paquets aux pare-feu de nouvelle génération (NGFW). Un thème au cœur du métier SISR, où la sécurisation des infrastructures est centrale.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head reveal"><span class="num">// méthode</span><h2>Mes outils de veille</h2></div>
+  <div class="tag-row reveal">
+    <span class="tag">Feedly</span><span class="tag">Google Alerts</span><span class="tag">RSS</span>
+    <span class="tag">Bulletins CERT-FR</span><span class="tag">Blogs éditeurs (Fortinet, pfSense…)</span><span class="tag">LinkedIn</span>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head reveal"><span class="num">// les grandes étapes</span><h2>L'évolution des pare-feu</h2><p>Le pare-feu est passé d'un simple filtre à la frontière du réseau à une brique de sécurité intelligente, intégrée et distribuée.</p></div>
+  <div class="grid cols-2">
+    <div class="card reveal">
+      <span class="num" style="font-family:var(--mono);color:var(--signal);font-size:.8rem">01</span>
+      <h3>Filtrage de paquets (stateless)</h3>
+      <p>Les premiers pare-feu filtrent chaque paquet selon des règles fixes : adresse IP, port, protocole. Simples et rapides, mais sans mémoire du contexte des connexions.</p>
+      <div class="tag-row"><span class="tag">ACL</span><span class="tag">IP / Port</span></div>
+    </div>
+    <div class="card reveal">
+      <span class="num" style="font-family:var(--mono);color:var(--signal);font-size:.8rem">02</span>
+      <h3>Pare-feu à états (stateful)</h3>
+      <p>Le pare-feu suit l'état des connexions (table de sessions) et n'autorise que le trafic correspondant à une connexion légitime déjà établie. C'est le standard sur la plupart des équipements actuels.</p>
+      <div class="tag-row"><span class="tag">Stateful</span><span class="tag">Sessions</span></div>
+    </div>
+    <div class="card reveal">
+      <span class="num" style="font-family:var(--mono);color:var(--signal);font-size:.8rem">03</span>
+      <h3>Pare-feu nouvelle génération (NGFW)</h3>
+      <p>Analyse jusqu'à la couche applicative (DPI), identification des applications et des utilisateurs, prévention d'intrusion (IPS), inspection du trafic chiffré et filtrage web. Le pare-feu devient un point de contrôle complet.</p>
+      <div class="tag-row"><span class="tag">DPI</span><span class="tag">IPS</span><span class="tag">App-ID</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="grid cols-2">
+    <div class="card reveal">
+      <h3>Impact sur le métier SISR</h3>
+      <p>Pour un administrateur systèmes &amp; réseaux, ces évolutions changent le travail quotidien : configurer des règles applicatives plutôt que de simples ports, superviser un IPS, gérer l'inspection du trafic chiffré et appliquer une logique Zero Trust. La maîtrise du pare-feu reste une compétence clé et de plus en plus transverse.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Solutions suivies</h3>
+      <p>Je suis l'actualité de quelques solutions représentatives, libres et commerciales : pfSense / OPNsense (open source), iptables / nftables sous Linux, et les NGFW du marché comme Fortinet (FortiGate), Stormshield ou Palo Alto.</p>
+      <div class="tag-row"><span class="tag">pfSense</span><span class="tag">nftables</span><span class="tag">FortiGate</span><span class="tag">Stormshield</span></div>
+    </div>
+  </div>
+  <span class="placeholder" style="margin-top:24px"></span>
+</div></section>
+</main>
+
+<footer class="site-footer wrap">
+  <span>&copy; <span id="year"></span> Preston Yassa &middot; BTS SIO SISR</span>
+  <span>Portfolio E4 — hébergeable sur GitHub Pages</span>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

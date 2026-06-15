@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Preston YASSA · BTS SIO SISR</title>
+<meta name="description" content="Portfolio BTS SIO option SISR — épreuve E4. Projets, compétences, veille technologique et synoptique E5.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="led"></span>Preston.sisr</a>
+    <button class="nav-toggle" aria-label="Menu">≡</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">Profil</a></li>
+      <li><a href="bts-sio.html">BTS SIO</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="veille.html">Veille</a></li>
+      <li><a href="patrimoine.html">Patrimoine SI</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="synoptique.html">Synoptique E5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Portfolio · épreuve E4</p>
+      <h1>Preston Yassa<br><span class="thin">Administration systèmes &amp; réseaux</span></h1>
+      <p class="lead">Étudiant en BTS SIO option SISR. Je conçois, sécurise et maintiens des infrastructures : Active Directory, supervision, réseaux Cisco et cybersécurité. Voici les preuves concrètes de ce que je sais faire.</p>
+      <div class="hero-meta">
+        <a class="btn solid" href="projets.html">Voir mes projets</a>
+        <a class="btn" href="cv.pdf" download>Télécharger mon CV</a>
+        <a class="btn ghost" href="contact.html">Me contacter</a>
+      </div>
+
+      <!-- Panneau "baie de brassage" : signature visuelle -->
+      <div class="rack-panel" aria-hidden="true">
+        <div class="rack-row"><span class="u">U01</span> Supervision — GLPI / inventaire &amp; tickets <span class="leds"><span class="on"></span><span class="on"></span><span></span><span></span></span></div>
+        <div class="rack-row"><span class="u">U02</span> Switch Cisco — routage, LAN <span class="leds"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APERÇU DES SECTIONS OBLIGATOIRES -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="num">// sommaire</span>
+        <h2>Un portfolio complet pour l'E4</h2>
+        <p>Chaque section attendue par le référentiel est présente : présentation, projets encadrés, veille, gestion du patrimoine informatique, synthèse des compétences et contact.</p>
+      </div>
+      <div class="grid cols-3">
+        <a class="card reveal" href="about.html"><h3>Profil &amp; parcours</h3><p>Identité, scolarité, stages / alternance, CV et LinkedIn.</p></a>
+        <a class="card reveal" href="bts-sio.html"><h3>BTS SIO — SISR</h3><p>Objectifs du diplôme et de l'option systèmes &amp; réseaux.</p></a>
+        <a class="card reveal" href="projets.html"><h3>Projets (PPE / ateliers)</h3><p>AD, GLPI, cybersécurité, Cisco — technos &amp; dépôts GitHub.</p></a>
+        <a class="card reveal" href="veille.html"><h3>Veille technologique</h3><p>5G/IA, cryptographie, cybersécurité, RGPD/CNIL.</p></a>
+        <a class="card reveal" href="patrimoine.html"><h3>Patrimoine informatique</h3><p>Maintenance, sécurisation, audits et bonnes pratiques.</p></a>
+        <a class="card reveal" href="competences.html"><h3>Synthèse des compétences</h3><p>Tableau des compétences réellement maîtrisées.</p></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <span>© <span id="year"></span> Preston YASSA · BTS SIO SISR</span>
+  <span>Portfolio E4 — hébergeable sur GitHub Pages</span>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
